@@ -1,0 +1,63 @@
+--Concord.component("button",function(c,params,obj)
+--    c.event = params.event or nil
+--    if c.event and not c.event.args then  c.event.args = {} end
+--
+--end)
+-------------------------------------------------------------------
+--function classic_button(e,params) 
+--  local params = params or {}
+--  params.w = params.w or 84
+--  params.h = params.h or 32
+--  params.centered_text = true
+--  e
+--  
+--  :assemble(nine_patch_button,params)
+--  :assemble(button,params)
+--  :give("text",params,e)
+--  e.name = "classic_button"
+--end
+--
+--function ui_button_2(e,params) 
+--  local params = params or {}
+--  params.w = 128
+--  params.h = 128
+--  e
+--
+--  :assemble(nine_patch_button,params)
+--  :assemble(button,params)
+--  :assemble(icon,params)
+--  --:give("text",params,e)
+--  e.name = "ui_button_2"
+--end
+--
+--
+--function nine_patch_button(e,params) 
+--  local params = params or {}
+--  params.w = params.w or 84
+--  params.h = params.h or 32
+--  params.asset =  "assets/graphics/ui/button_9_patch.png"
+--  
+--  local settings = {corner = {w = 16, h = 16},
+--                    side_pattern_len = 1}
+--  params.sectors = settings
+--
+--
+--  e
+--  :assemble(object,params)
+--  :give("nine_patch",params,e)
+--  
+--  
+--end
+--
+--
+--function button(e,params)  --BASE CLASS V
+--  local params = params or {}
+--  e
+--  :give("mouse_callback",params,e)
+--  :give("button",params,e)
+--  
+--  e.name = "button"
+--  
+--end
+--
+--return ui_button
